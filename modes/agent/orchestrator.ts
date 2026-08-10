@@ -1,5 +1,6 @@
 import chalk from "chalk";
 import { text } from "stream/iter";
+import { defaultAgentConfig } from "./types";
 
 export async function runAgentMode(){
     console.log(chalk.bold("\n🤖 Agent Mode\n"));
@@ -13,4 +14,6 @@ export async function runAgentMode(){
         console.log(chalk.dim("Exiting..."));
         return;
     }
+
+    const config= defaultAgentConfig();
 }
