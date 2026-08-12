@@ -1,5 +1,6 @@
 import chalk from "chalk";
 import {select, isCancel} from "@clack/prompts";
+import { runAgentMode } from "./agent/orchestrator";
 
 export async function runCliMode(){
     while(true){
@@ -18,7 +19,7 @@ export async function runCliMode(){
         }
 
         if(mode==="agent"){
-            console.log(chalk.dim("Starting Clawbot in Agent mode..."));
+            await runAgentMode();
         }
         if(mode==="ask"){
             console.log(chalk.dim("Starting Clawbot in Ask mode..."));
