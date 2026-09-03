@@ -8,6 +8,7 @@ import { ActionTracker } from "../agent/action-tracker";
 import { getAgentModel } from "../../ai";
 import { renderTerminalMarkdown } from "../../tui/terminal-md";
 import { runApprovalFlow } from "../agent/approval";
+import { createWebTools } from "../plan/web-tools";
 
 function createAskTool(executor: ToolExecutor) {
   return {
@@ -92,6 +93,7 @@ export async function runAskMode() {
 
   const tools = {
     ...createAskTool(executor),
+    ...createWebTools(tracker),
   };
 
   const agent = new ToolLoopAgent({
