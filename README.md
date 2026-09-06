@@ -83,6 +83,8 @@ The startup menu asks whether to enter **CLI**, **Telegram**, or exit. The proce
 
 CLI mode presents three workflows:
 
+![Clawbot CLI screenshot](images/cli%20screenshot.png)
+
 #### Agent Mode
 
 Enter a goal such as:
