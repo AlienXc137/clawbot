@@ -1,5 +1,14 @@
 # Clawbot
 
+```text
+ ██████╗██╗      █████╗ ██╗    ██╗██████╗  ██████╗ ████████╗
+██╔════╝██║     ██╔══██╗██║    ██║██╔══██╗██╔═══██╗╚══██╔══╝
+██║     ██║     ███████║██║ █╗ ██║██████╔╝██║   ██║   ██║
+██║     ██║     ██╔══██║██║███╗██║██╔══██╗██║   ██║   ██║
+╚██████╗███████╗██║  ██║╚███╔███╔╝██████╔╝╚██████╔╝   ██║
+ ╚═════╝╚══════╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚═════╝  ╚═════╝    ╚═╝
+```
+
 Clawbot is an approval-first AI assistant for inspecting, planning changes to, and working with a local codebase. It runs as an interactive Bun CLI and can also expose the same workflows through a private Telegram bot.
 
 Clawbot uses an OpenRouter-hosted model through the Vercel AI SDK. Read-only investigation happens during the model run, while file changes, deletions, directory creation, and shell commands are staged for review before they are applied.
